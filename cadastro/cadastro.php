@@ -1,13 +1,13 @@
 <?php 
     $titulo = $_POST['titulo'];
-    $editora = $_POST['descrição'];
-    $autor = $_POST['nome'];
+    $descrição = $_POST['descrição'];
+    $nome = $_POST['nome'];
     $categoria = $_POST['categoria'];
     
 
-    if($titulo != "" && $editora != "" && $autor != "" && $anoEd != "" && $categoria != "" && $numDePaginas != ""){
+    if($titulo != ""  && descrição != "" && $nome != "" && $categoria != "" ){
         
-        $conexaoBD = mysqli_connect("localhost", "root", "","coti01");
+        $conexaoBD = mysqli_connect("localhost", "root", "");
         $dadosParaBD = "insert into livros values (null, '".$titulo."', '".$descrição"', '".$nome."', '".$categoria."', '")";
         
        
