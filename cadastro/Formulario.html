@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <h1>Formulario</h1>
+    
+<body>
+    <section>
+    
+        <div id="dados">
+            <p>Titulo: <input type="string" name="Titulo" id="texta" > </p>
+            <p>Descrição: <input type="string" name="Descrição" id="texte"></p>
+        </div>        
+        <div id="dados">
+            <p>Listar:<input type="number" name="Listar" id="textar" > 
+             <input type="button" value="Visualizar" onclick="Visualizar()"></p>
+        </div>
+        <div>
+            <p>Data de inicio<input type="date" name="Data de Inicio" id="textd">
+                <p>Data de Fim<input type="date" name="Data de Fim" id="textf" >    
+        </div>
+        <div class="form-group col-md-4">
+            <label for="anoEdicao">Categoria</label>
+            <select id="anoEdicao" class="form-control" name="categoria" required>
+                <option selected>Escolher Categoria</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Fisica">Fisica</option>
+                <option value="Matemática">Matemática</option>
+                <option value="Portugues">Portugues</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Quimica">Quimica</option>
+                <option value="Educação Fisica">Educação fisica</option>
+                <option value="filosofia">Filosofia</option>
+                <option value="linguasEstrangeiras">Línguas Estrangeiras</option>
+                <option value="Cultura Religiosa">Cultura Religiosa</option>
+            </select>
+        </div>
+    </div>
+        <div>
+
+            <p><input type="button" value="Criar" id="texta">
+            <p><input type="button" value="Editar" id="texted">
+        </div>
+
+</section>
+<footer>
+    <p>&copy; Programa de Cadastro</p>
+</footer>
+<script src="script04.js"></script>
+</head>
+
+   </body>
+
+   
+</html>
